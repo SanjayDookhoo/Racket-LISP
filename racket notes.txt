@@ -1,0 +1,35 @@
+if a function is called witout its parenthesis then it simply says the <procedure..> aapply this tot he curried function
+
+when putting a string in a function it must be passed with the quotes
+
+single line commenting ; data to be commented out 
+several line commenting #| data to be commented out |#
+
+If you’ve used other programming languages before, you may
+remember needing to write something like “return” to cause a value
+to be returned. This is not necessary in Racket. The final value
+calculated in the body of the function is returned automatically.
+
+an expression is defined as anything within parentheses
+
+note (- n 1 8) means POSITIVE n -1 -8, first is always positive
+
+declaring variables:
+	(define lower 1) where 'lower' is the variable and 1 is the value
+
+changing variable values:
+	(set! variable expression) #| pronounced set bang|#
+	
+Function: 
+	(define (function-name argument-name ...)
+		function-body-expression
+		function-body-expression
+	...)
+	
+	NB:
+	First, we specify the name of the function and the names of its arguments and put all of
+	them in a pair of parentheses. Second, we follow it up with the expressions that comprise
+	the function’s logic.
+	The dots mean that the preceding entity occurs an arbitrary number of times: zero
+	times, one time, two times, and so on. It is thus possible that a function may have zero
+	arguments, but it must have at least one expression in its body.
